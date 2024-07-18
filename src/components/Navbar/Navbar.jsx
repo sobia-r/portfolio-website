@@ -26,9 +26,9 @@ export const Navbar = () => {
                   : getImageUrl("nav/menuIcon.png")
               }
               alt='menu-button'
-              onClick={()=>setMenuOpen(!menuOpen)}
+              onClick={()=>setMenuOpen(!menuOpen)} 
             />
-            <ul className={styles.menuItems}>
+            <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`} onClick={()=>setMenuOpen(false)} /*tilda sign `` used for string interpolation*/ > 
                 <li><a href="#About">About</a></li>
                 <li><a href="#Experience">Experience</a></li>
                 <li><a href="#Projects">Project</a></li>
