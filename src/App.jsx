@@ -11,6 +11,7 @@ function App() {
     <Hero/>
     <About/>
     <Experience/>
+    <Project/>
     </div>;
 }
 
